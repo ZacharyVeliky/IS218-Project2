@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="navbar"></div>
+	
+	<body>
+		<div class="container-fluid" id="header">
+
+		</div>
+
+		<!-- First Container -->
+		<div class="container-fluid bg-1 text-center">
+			<h3 class="margin">GIT</h3>
+			<img src="pylint.svg" class="img-responsive" style="display:inline" alt="Pylint">
+			<h3></h3>
+		</div>
+
+		<!-- Second Container -->
+		<div class="container-fluid bg-1 text-center">
+			<h3 class="margin">What is Pylint?</h3>
+			<p>Pylint is a program that examins python code to ensure it folows the PEP8 standard. It also helps with error detection and refactoring help</p>
+		</div>
+
+		<!-- Third Container (Grid) -->
+		<div class="container-fluid bg-1 text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<b>How to install Pylint</b>
+					<p></p>	    
+				<p>Pylint can be installed on windows with the command</p>
+					<b>How to use Git Bash</b>
+				<p></p>
+				<p>Git Bash has the same operations as a standard Bash experience. It will be helpful to review basic Bash usage. Advanced usage of Bash is outside the scope of this Git focused document.</p>            
+				<img src="Microsoft.VisualStudio.Services.Icons.png" class="img-responsive margin" style="width:500px; height: 250px" alt="Image">
+				</div>
+				<div class="col-sm-4">
+					<p></p>
+					<img src="https://user-images.githubusercontent.com/828400/31576764-825627b2-b0f9-11e7-8256-6f8e0798f9c9.gif" class="img-responsive margin" style="width:500px; height: 500px " alt="Image">
+				</div>
+				<div class="col-sm-4">
+				<b>Commands</b>
+				<p></p>            
+				<p><b>git add</b> - Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index.</p>
+				<p><b>git commit</b> - Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.</p>
+				<p><b>git status</b> - This command returns the current state of the repository.</p>
+				<p><b>git config</b> - With Git, there are many configurations and settings possible. git config is how to assign these settings. Two important settings are user user.name and user.email.</p>
+				<p><b>git branch</b> - To determine what branch the local repository is on, add a new branch, or delete a branch.</p>
+				<p><b>git checkout</b> - To start working in a different branch, use git checkout to switch branches.</p>
+					<!---<img src="https://rubygarage.s3.amazonaws.com/uploads/article_image/file/599/git-cheatsheet-5.jpg" class="img-responsive margin" style="width:500px; height: 250px" alt="Image"> --->
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="container-fluid bg-1 text-center">
+			<p><a href="https://git-scm.com/book/en/v2">Get Pylint here</a></p>
+		</footer>
+	</body>
+</html>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navbar.html", function(data){
+    $("#navbar").replaceWith(data);
+});
+</script>
