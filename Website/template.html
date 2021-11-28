@@ -3,21 +3,16 @@
     <div id="navbar"></div>
 	
 	<body>
-		<div class="container-fluid" id="header">
-	</div>
 
-		<!-- First Container -->
 		<div class="container-fluid bg-1 text-center">
 			<img src="" class="img-responsive" style="display:inline" alt="">
 		</div>
 
-		<!-- Second Container -->
 		<div class="container-fluid bg-1 text-center">
 			<h3 class="margin">What is ?</h3>
 			<p></p>
 		</div>
 
-		<!-- Third Container (Grid) -->
 		<div class="container-fluid bg-1 text-center">
 			<div class="row">
 				<div class="col-sm-4">
@@ -57,13 +52,12 @@
             </div>
 		</div>
 
-		<!-- Footer -->
 		<footer class="container-fluid bg-1 text-center">
 			<p><a href="">Get  here</a></p>
 		</footer>
 	</body>
 </html>
-<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $.get("navbar.html", function(data){
     $("#navbar").replaceWith(data);

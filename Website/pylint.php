@@ -1,32 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-    <div id="navbar"></div>
-	
-	<body>
-		<div class="container-fluid" id="header">
-	</div>
+<?php include('navbar.html'); ?>
 
-		<!-- First Container -->
-		<div class="container-fluid bg-1 text-center">
+<html lang="en">	
+	<body>
+		<div class="container-fluid text-center">
 			<img src="images/pylint.svg" class="img-responsive" style="display:inline" alt="Pylint">
 		</div>
-
-		<!-- Second Container -->
 		<div class="container-fluid bg-1 text-center">
 			<h3 class="margin">What is Pylint?</h3>
 			<p>Pylint is a program that examins python code to ensure it folows the PEP8 standard. It also helps with error detection and refactoring help</p>
 		</div>
-
-		<!-- Third Container (Grid) -->
 		<div class="container-fluid bg-1 text-center">
 			<div class="row">
 				<div class="col-sm-4">
 					<b>How to install Pylint</b>
 					<br>	    
-                    <p>Pylint can be installed on windows with the command <code>pip install pytest-pylint</code> (which is the command used in the examples) or <code>pip install pylint</code></p>
-					
-				<p></p>
-</div>
+                    <p>Pylint can be installed on windows with the command <code>pip install pytest-pylint</code> (which is the command used in the examples) or <code>pip install pylint</code></p>	
+                </div>
 				<div class="col-sm-4">
                     <b>How to use Pylint</b>
 				    <p>Pylint can be run in the terminal of Pycharm using the command <code>pytest --pylint</code> as shown in the example below</p>
@@ -71,15 +60,8 @@
             </div>
 		</div>
 
-		<!-- Footer -->
 		<footer class="container-fluid bg-1 text-center">
 			<p><a href="https://git-scm.com/book/en/v2">Get Pylint here</a></p>
 		</footer>
 	</body>
 </html>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-$.get("navbar.html", function(data){
-    $("#navbar").replaceWith(data);
-});
-</script>
